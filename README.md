@@ -17,6 +17,8 @@ A statewide average hides big differences between counties. A renter, a housing 
 
 ## Key finding
 Between 2014 and 2024, rent grew faster than renter income in Franklin (+14.5 points), Norfolk (+10.9) and Essex (+8.9) counties, while in Suffolk (−19.1) and Hampden (−14.0), renter income grew faster. In 2024, Barnstable County had the highest rent burden (40.9%) and Middlesex the lowest (31.4%).
+![Rent growth minus renter income growth by county, 2014 to 2024](growth_gap_by_county.png)
+![Rent burden by county, 2024](burden_by_county.png)
 
 ## Projection
 `--county` shows a rough straight-line estimate of the 2029 rent burden. It uses only three data points (2014, 2019, 2024), so treat it as an illustration, not a forecast. For example, Essex County's estimate for 2029 is 39.5%. It is not shown for counties with unreliable data.
