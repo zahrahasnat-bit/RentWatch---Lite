@@ -17,8 +17,12 @@ class AffordabilityAnalyzer:
         self.data = pd.read_csv(path)
         # Loads the three-year table and keeps it inside the analyzer.
 
-        self.years = sorted(self.data["Year"].unique())
+        self.data = self.data[self.data["County"].str.endswith(" County")].copy()
+        # Keeps only real counties, so a stray "Massachusetts" row can never get in.
+
+        self.years = [int(y) for y in sorted(self.data["Year"].unique())]
         # The years in the data, in order: [2014, 2019, 2024].
+        # int() turns pandas' special number type into a plain Python number.
 
         self.first_year = self.years[0]
         self.last_year = self.years[-1]
